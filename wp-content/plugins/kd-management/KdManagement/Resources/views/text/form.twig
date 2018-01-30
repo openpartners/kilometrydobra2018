@@ -1,0 +1,145 @@
+{% import "templates/form_refactored.twig" as form %}
+<style>
+    #kdm-container {
+        margin-top: 50px;
+        min-height: 300px;
+        margin-bottom: 50px;
+        background: #fff;
+        overflow: hidden;
+        padding-bottom: 30px;
+    }
+    #kdm-container .content {
+        padding: 20px;
+        float: none;
+        clear: both;
+    }
+
+    #kdm-container .tabs > div {
+        padding: 20px;
+        float: left;
+        background: #eae6e9;
+        cursor: pointer;
+    }
+
+    #kdm-container .tabs div:hover {
+        background: #d8d4d7;
+    }
+
+    #kdm-container .tabs div.active {
+        font-weight: bold;
+        background: #aba6a9;
+    }
+
+    #kdm-container .content > div > .language-tabs {
+        width: 20%;
+        float: left;
+    }
+
+    #kdm-container .content > div > .language-tabs-content {
+        box-sizing: border-box;
+        padding-left: 30px;
+        width: 80%;
+        float: left;
+    }
+
+    #kdm-container .content > div > .language-tabs > div {
+        text-align: center;
+        padding: 10px;
+        background: #fff;
+        cursor: pointer;
+    }
+
+    #kdm-container .content > div > .language-tabs > div:hover {
+        background: #eaefff;
+    }
+
+    #kdm-container .content > div > .language-tabs > div.active {
+        font-weight: bold;
+        background: #d5dfff;
+    }
+
+    #kdm-container .form-group .label, #kdm-container .form-group .input {
+        float: left;
+    }
+
+    #kdm-container .form-group {
+        margin-top: 20px;
+        float: none;
+        clear: both;
+        overflow: hidden;
+    }
+
+    #kdm-container .form-group .label {
+        font-weight: bold;
+        width: 50%;
+    }
+
+    #kdm-container .form-group .input {
+        width: 100%;
+    }
+
+    #kdm-container .fieldset {
+        padding: 30px;
+        border: 1px solid #000;
+    }
+
+    #kdm-container .fieldset:not(:first-of-type) {
+        margin-top: 30px;
+    }
+
+    #kdm-container .save {
+        text-align: right;
+    }
+
+    #kdm-container .save button {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+</style>
+<form action="/wp-admin/admin.php?page=kdm_text_save" method="post">
+<div id="kdm-container">
+    <div class="save">
+        <button class="button button-primary">Zapisz</button>
+    </div>
+    <div class="content">
+        <div>
+            <div class="language-tabs">
+            {% for language in languages %}
+                <div {% if loop.first %} class="active" {% endif %} data-language-tab="{{ language.language_id }}">
+                    Język {{ language.name }}
+                </div>
+            {% endfor %}
+            </div>
+
+            <div class="language-tabs-content">
+            {% for language in languages %}
+                <div {% if not loop.first %} class="hidden" {% endif %} data-language-tab-content="{{ language.language_id }}">
+                    {% for text in texts %}
+                        <div class="fieldset">
+                            <div class="description">
+                                Nazwa systemowa tekstu: <strong>{{ text.label }}</strong>
+                            </div>
+                            {{
+                                form.textarea('texts_form['~language.language_id~']['~text.text_id~']',
+                                '', attribute(attribute(textsFormData, language.language_id), text.text_id))
+                            }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+
+<script type="text/javascript">
+
+    jQuery('#kdm-container .content > div .language-tabs > div').on('click', function(){
+        jQuery('.language-tabs > div', jQuery(this).parent().parent()).removeClass('active');
+        jQuery(this).addClass('active');
+        jQuery('.language-tabs-content > div', jQuery(this).parent().parent()).addClass('hidden');
+        jQuery('.language-tabs-content > div[data-language-tab-content="'+jQuery(this).data('language-tab')+'"]', jQuery(this).parent().parent()).removeClass('hidden');
+    });
+
+</script>

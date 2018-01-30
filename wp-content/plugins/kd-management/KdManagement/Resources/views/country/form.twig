@@ -1,0 +1,61 @@
+{% extends "layouts/admin.twig" %}
+{% import "templates/form.twig" as form %}
+
+{% block content %}
+
+{% set action = 'add' %}
+
+{% if country %}
+    {% set action = 'edit&country_id=' ~ country.country_id %}
+{% endif %}
+
+<h2>
+{% if country %}
+Edytuj państwo
+{% else %}
+Dodaj nowe państwo
+{% endif %}
+<a href="/wp-admin/admin.php?page=kdm_country_list" class="add-new-h2">Wróć</a>
+</h2>
+
+
+{% if errors %}
+<div class="error">
+    {% for error in errors %}
+    {{ error.0 }}<br />
+    {% endfor %}
+</div>
+{% endif %}
+
+<form action="/wp-admin/admin.php?page=kdm_country_{{action}}" method="post">
+
+    <table class="form-table">
+        <tbody>
+            {% if country %}
+            <input type="hidden" name="country[country_id]" value="{{country.country_id}}" />
+            {% endif %}
+
+            {{ form.input('text', 'country[name]', 'Nazwa na liście w panelu administracyjnym', country.name, '') }}
+
+            {{ form.input('text', 'country[latitude]', 'Szerokość geograficzna', country.latitude, '') }}
+            {{ form.input('text', 'country[longitude]', 'Długość geograficzna', country.longitude, '') }}
+
+            {{ form.input('text', 'country[flag_img_url]', 'Adres url grafiki flagi', country.flag_img_url, '') }}
+
+            {% for language in languages %}
+                {{ form.input('text', 'country[text_languages]['~language.language_id~']', 'Nazwa (język '~language.name~')', attribute(text_languages, language.language_id), '') }}
+            {% endfor %}
+
+        </tbody>
+    </table>
+    <p class="submit">
+        {% if country %}
+        <button class="button button-primary">Edytuj</button>
+        {% else %}
+        <button class="button button-primary">Dodaj</button>
+        {% endif %}
+    </p>
+
+</form>
+
+{% endblock %}

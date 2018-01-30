@@ -1,0 +1,15 @@
+{
+    "name" : "kd-management",
+    "autoload" : {
+        "psr-4" : {
+            "KdManagement\\" : "KdManagement"
+        }
+    },
+    "config" : {
+        "vendor-dir" : "vendor"
+    },
+    "require": {
+        "twig/twig": "^1.30",
+        "pimple/pimple": "^3.0"
+    }
+}

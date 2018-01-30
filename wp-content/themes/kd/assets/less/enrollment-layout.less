@@ -1,0 +1,729 @@
+body.enrollment-2016 {
+    background: #409dbf;
+    header {
+        background: rgba(0, 0, 0, 0.25);
+        nav {
+            left: 300px;
+            right: initial;
+            &+.toggle {
+                i {
+                    background: #fff;
+                }
+            }
+            ul {
+                visibility: visible !important;
+                li {
+                    a {
+                        color: #fefefe !important;
+                        font-size: 0.9em;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            &>ul {
+                &>li {
+                    &:last-child {
+                        top: -5px;
+                        bottom: initial;
+                        margin: initial;
+                        background: url('../../images/lang-select-arrow.png') no-repeat right rgba(0, 0, 0, 0.15);
+                        border-radius: 8px;
+                        background-position-x: 40px;
+                        // width: initial;
+                        position: relative;
+                        float: initial;
+                        right: initial;
+                        height: initial;
+                        border: initial;
+                        visibility: visible !important;
+                        margin-left: 34px;
+                        cursor: pointer;
+                        float: left;
+                        color: #000;
+                        font-size: 18px;
+                        font-weight: 900;
+                        margin-left: 34px;
+                        border-bottom: 4px solid transparent;
+                        &> ul {
+                            padding-top: 43px;
+                            li {
+                                background: rgba(0, 0, 0, 0.15);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #logo {
+            background-color: #fff !important;
+        }
+        .social {
+            float: right;
+            position: relative;
+            margin-top: 5px;
+            margin-right: 10px;
+            .item {
+                transition: .5s;
+                float: left;
+                background: rgba(0, 0, 0, 0.15);
+                width:50px;
+                height: 50px;
+                border-radius: 8px;
+                &:not(:last-of-type) {
+                    margin-right: 10px;
+                }
+                &:hover {
+                    background: rgba(255, 255, 255, 0.25);
+                }
+                a {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .header {
+        position: relative;
+        height: 850px;
+        &.stars {
+            background: url('../../images/enrollment-layout/stars-background.png') no-repeat center top;
+        }
+        &.about-us {
+            background: url('../../images/about-us-header.jpg') no-repeat center top;
+            background-size: cover;
+            margin-top: -60px;
+            .overlay-wrapper {
+                min-height: 300px;
+            }
+        }
+        .globe-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            .globe {
+                position: relative;
+                bottom: -10em;
+                display: block;
+                margin: 0 auto;
+                -webkit-animation:spin 30s linear infinite;
+                -moz-animation:spin 30s linear infinite;
+                animation:spin 30s linear infinite;
+            }
+        }
+        .counter-wrapper {
+            height: 40%;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            .counter-container {
+                width: 60%;
+                .caption {
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
+                    font-size: 2vw;
+                }
+                .counter {
+                    text-align: center;
+                    padding: 2em 0;
+                }
+            }
+        }
+        &.enrollment {
+            background: url('../../images/enrollment-layout/stars-background.png') no-repeat center top;
+            background-size: cover;
+        }
+    }
+    .campaigners {
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        min-height: 800px;
+    }
+
+    .results {
+        background: url('../../images/enrollment-layout/results-background.png') no-repeat center #fff;
+        background-size: cover;
+        min-height: 519px;
+        .tile {
+            background: rgba(255, 255, 255, 0.5);
+            height: 240px;
+            width: 240px !important;
+            border-radius: 10px;
+            color:  rgb(153, 27, 41);
+            font-weight: bold;
+            text-align: center;
+            padding: 4em 0;
+            &:not(:first-of-type) {
+                margin-left: calc(~"(100% - 720px)/2");
+            }
+            .caption {
+                font-size: 1em;
+            }
+            .spacer {
+                height: 3px;
+                background: rgb(153, 27, 41);
+                width: 80px;
+                margin: 2em auto;
+            }
+            .subcaption {
+                font-size: 3em;
+                text-transform: uppercase;
+                font-family:Bebas Bold;
+            }
+        }
+        .custom-button > div {
+            background: rgba(0, 0, 0, 0) !important;
+        }
+    }
+
+    .how-to-join-us {
+        background: url('../../images/enrollment-layout/how-to-join-background.png') no-repeat center #fff;
+        background-size: cover;
+        min-height: 520px;
+        .step {
+            text-align: center;
+            .caption {
+                margin-top: 1em;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            &:not(:last-of-type) {
+                .caption {
+                    &::after {
+                        content: '>';
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .custom-button {
+        text-align: center;
+        text-decoration: none;
+        &>div {
+            margin: 0 auto;
+            display: table;
+            min-height: 3em;
+            padding: 0 1em;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            span {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 5px 0;
+                &::after{
+                    margin-left: 8px;
+                    content: '>';
+                }
+            }
+        }
+        &.transparent {
+            &>div {
+                color: #fff;
+                background: #000;
+                border: 3px solid #fff;
+            }
+        }
+        &.black {
+            &>div {
+                color: #fff;
+                background: #000;
+                border: 3px solid #fff;
+            }
+        }
+        &.maroon {
+            &>div {
+                background: rgba(0, 0, 0, 0);
+                color: #991b29;
+                border: 3px solid #991b29;
+            }
+        }
+    }
+
+    .campaigners {
+        .row.head {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 2em;
+        }
+        .container {
+            padding-bottom: 5em;
+        }
+        .row.organizations {
+            border-top: 1px solid #dfdfdf;;
+            .organizations-list {
+                display: none;
+                .toggle {
+                    left: -13px;
+                    bottom: -12px;
+                    background: url('../../images/enrollment-layout/icon-cross.png') no-repeat center center;
+                }
+                .row {
+                    .logo {
+                        text-align: center;
+                        img {
+                            height: 40px;
+                        }
+
+                    }
+                }
+                a {
+                    color: #000;
+                }
+            }
+            .toggle {
+                cursor: pointer;
+                z-index: 1;
+                right: 0;
+                bottom: 5px;
+                position: absolute;
+                content: '';
+                display: block;
+                height: 26px;
+                width: 26px;
+            }
+            .icons {
+                position: relative;
+                img{
+                    position: relative;
+                    display: inline-block;
+                    z-index: 1;
+                    &.flag {
+                        float: left;
+                        bottom: 9px;
+                    }
+                    &.list-icon-cross {
+                        float: right;
+                        bottom: 13px;
+                    }
+                }
+                .country {
+                    padding: 0 2em;
+                    background: #fff;
+                    position: absolute;
+                    left: 115%;
+                    top: -1em;
+                    font-weight: bold;
+                    white-space: nowrap;
+                }
+            }
+            &.opened {
+                .organizations-list {
+                    display: block !important;
+                }
+                .toggle {
+                    background: url('../../images/enrollment-layout/icon-cross.png') no-repeat center center;
+                }
+            }
+            &:not(.opened) {
+                .toggle {
+                    background: url('../../images/enrollment-layout/icon-plus.png') no-repeat center center;
+                }
+            }
+            &:not(:first-of-type) {
+                margin-top: 3em;
+            }
+            .organizations-list {
+                position: relative;
+                padding: 2em;
+                border-bottom: 1px solid #dfdfdf;
+                border-left: 1px solid #dfdfdf;
+                margin-left: -13px;
+                width: 87.7% !important;
+                .city {
+                    font-weight: bold;
+                    padding-top: .5em;
+                    line-height: 1em;
+                }
+                &>.row {
+                    &:not(:first-of-type) {
+                        margin-top: 1em;
+                    }
+                }
+            }
+        }
+    }
+    h1.container-head {
+        border-bottom: 3px solid #000;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        &.white {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+
+    .video-box {
+        background: #000;
+        min-height: 300px;
+    }
+
+    footer {
+        padding-top: 50px;
+        background: #dfdfdf;
+        min-height: 400px;
+        .row:first-of-type {
+            margin-bottom: initial;
+            border-bottom: none;
+        }
+        &:before {
+            background: none;
+            height: 0;
+            top: initial;
+        }
+        h4 {
+            text-align: left !important;
+            text-transform: uppercase;
+            color: #000  !important;
+            font-size: 1em !important;
+        }
+        .nav {
+            li {
+                list-style: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #000;
+                &:not(:last-of-type) {
+                    padding-bottom: 1em;
+                }
+                a {
+                    color: #000;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+        .social {
+            &>a {
+                &:nth-of-type(2) {
+                    margin: 0 2em;
+                }
+            }
+        }
+        .wysija-submit {
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 3em;
+            color: #000;
+            background: rgba(0, 0, 0, 0);
+            border: 3px solid #000;
+            height: auto !important;
+            width: auto !important;
+            &:hover {
+                color: #000;
+                border-color: #000;
+            }
+        }
+    }
+
+    #mainpage-slider {
+        margin: 0 !important;
+        .slick-slide {
+            width: 100%;
+            height: 800px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .overlay-wrapper {
+        position: absolute;
+        width: 100%;
+        min-height: 700px;
+        bottom: 0;
+        background-color:  rgba(0, 0, 0, 0.5);
+        .container-head {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+
+    .enrollment-form-wrapper {
+        position: absolute;
+        width: 100%;
+        min-height: 700px;
+        bottom: 0;
+        background-color:  rgba(0, 0, 0, 0.5);
+        .container-head {
+            color: #fff;
+            border-color: #fff;
+        }
+        .label {
+            position: relative;
+            color: #fff;
+            font-weight: bold;
+            text-align: right;
+            height: 38px;
+            margin-bottom: 1.5rem;
+            line-height: 2.5em;
+        }
+        .field {
+            position: relative;
+            input {
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+        input[type="submit"] {
+            margin: 2em auto;
+            display: block;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 3em;
+            color: #fff;
+            background: rgba(0, 0, 0, 0);
+            border: 3px solid #fff;
+            height: auto !important;
+            width: auto !important;
+            &:hover {
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+        .error-message {
+            text-align: left;
+            position: absolute;
+            width: 100%;
+            min-width: 400px;
+            z-index: 1;
+            margin-top: -1.5rem;
+            background: #fff;
+            box-shadow: 0px 9px 8px 0px rgba(0, 0, 0, 0.7);
+            border: 1px solid #9a1b28;
+            color: #9a1b28;
+            background: url('../../images/enrollment-layout/validation-error.png') no-repeat left center #fff;
+            background-position-x: 15px;
+            span {
+                display: block;
+                padding-left: 50px;
+                line-height: 2.5em;
+            }
+        }
+        #agreement {
+            height: 20px;
+        }
+    }
+
+    .about-us-items {
+        .item {
+            font-size: 1.2em;
+            padding-bottom: 50px;
+            border-bottom: 3px solid #DFDFDF;
+            &:not(:first-of-type) {
+                padding-top: 75px;
+            }
+        }
+    }
+
+    #map {
+        margin-top: 0;
+        #map-modal-wrapper {
+            img.logotype {
+                display: none;
+            }
+            a.pay-button {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 549px) {
+        .campaigners {
+           .organizations {
+               .icons {
+                   .country {
+                       left: 15% !important;
+                   }
+               }
+           }
+        }
+    }
+
+    @media (max-width: 800px) {
+        .header {
+            padding-top: 150px;
+        }
+
+        #map {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1150px) {
+        .header {
+            &:not(.enrollment) {
+                height: 75vw;
+            }
+            .globe-wrapper {
+                .globe {
+                    bottom: -15vw;
+                    width: 90%;
+                }
+            }
+            .counter-wrapper {
+                height: auto;
+                padding-bottom: 2em;
+            }
+        }
+    }
+    @media (max-width: 900px) {
+        header nav {
+            left: 0 !important;
+            ul {
+                background: rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+
+
+    @media (max-width: 1400px) {
+        .header {
+            .counter-wrapper {
+                .counter-container {
+                    .caption {
+                        border-bottom: 1px solid #fff;
+                        color: #fff;
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1075px) and (min-width: 901px)
+    {
+        header nav ul li:last-of-type {
+            float: none;
+            display: inline;
+            position: absolute;
+        }
+
+        header nav > ul > li:last-child > ul {
+            padding-top: 37px;
+            li:last-of-type {
+                position: relative;
+                a {
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 950px)
+    {
+        .results {
+            padding-bottom: 2em;
+            .tile {
+                float: none;
+                margin: 0 auto;
+                &:not(:first-of-type) {
+                    margin-top: 2em;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 549px)
+    {
+        .how-to-join-us {
+            padding-bottom: 2em;
+            .caption {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        .enrollment-form-wrapper {
+            .label {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width: 550px)
+    {
+        .enrollment-form-wrapper {
+            .columns.agreement-checkbox {
+                position: absolute;
+                top: 50%;
+                margin-top: -13px;
+            }
+
+            .columns.agreement-text {
+                margin-left: 50px;
+            }
+
+        }
+    }
+
+    @media (max-width: 850px)
+    {
+        footer {
+            padding-bottom: 5em;
+            .columns {
+                float: none;
+                margin: 0 auto;
+                width: 100% !important;
+                &:not(:first-of-type) {
+                    margin-top: 3em;
+                }
+            }
+            .nav {
+                li {
+                    text-align: center;
+                }
+            }
+            .social {
+                width: 10em;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media (max-width: 901px)
+    {
+        header {
+            .social {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 1075px)
+    {
+        header {
+            .social {
+                margin-top:45px;
+            }
+        }
+    }
+
+    @media (max-width: 1260px) and (min-width: 1076px)
+    {
+        header nav {
+            left: 250px;
+        }
+    }
+}

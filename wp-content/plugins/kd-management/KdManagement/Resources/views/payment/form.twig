@@ -1,0 +1,97 @@
+{% import "templates/form_refactored.twig" as form %}
+<style>
+    #kdm-container {
+        min-height: 50px;
+        margin-bottom: 50px;
+        background: #fff;
+        overflow: hidden;
+        padding-bottom: 30px;
+    }
+    #kdm-container .content {
+        padding: 20px;
+        float: none;
+        clear: both;
+    }
+
+    #kdm-container .tabs > div {
+        padding: 20px;
+        float: left;
+        background: #eae6e9;
+        cursor: pointer;
+    }
+
+    #kdm-container .tabs div:hover {
+        background: #d8d4d7;
+    }
+
+    #kdm-container .tabs div.active {
+        font-weight: bold;
+        background: #aba6a9;
+    }
+
+    #kdm-container .content > div > .language-tabs {
+        width: 20%;
+        float: left;
+    }
+
+    #kdm-container .content > div > .language-tabs-content {
+        box-sizing: border-box;
+        padding-left: 30px;
+        width: 80%;
+        float: left;
+    }
+
+    #kdm-container .content > div > .language-tabs > div {
+        text-align: center;
+        padding: 10px;
+        background: #fff;
+        cursor: pointer;
+    }
+
+    #kdm-container .content > div > .language-tabs > div:hover {
+        background: #eaefff;
+    }
+
+    #kdm-container .content > div > .language-tabs > div.active {
+        font-weight: bold;
+        background: #d5dfff;
+    }
+
+    #kdm-container .form-group .label, #kdm-container .form-group .input {
+        float: left;
+    }
+
+    #kdm-container .form-group {
+        margin-top: 20px;
+        float: none;
+        clear: both;
+        overflow: hidden;
+    }
+
+    #kdm-container .form-group .label {
+        font-weight: bold;
+        width: 20%;
+    }
+
+    #kdm-container .form-group .input, #kdm-container .form-group select {
+        width: 80%;
+    }
+
+    #kdm-container .fieldset {
+        padding: 30px;
+        border: 1px solid #000;
+    }
+
+    #kdm-container .fieldset:not(:first-of-type) {
+        margin-top: 30px;
+    }
+</style>
+
+<div id="kdm-container">
+    <div class="clearfix"></div>
+    <div class="content">
+        <div data-tab-content="1">
+            {{ form.select('payment_form[organization_id]', 'Organizacja', organizations, 'value', 'name', paymentFormData.organization_id) }}
+        </div>
+    </div>
+</div>

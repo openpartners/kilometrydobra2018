@@ -1,0 +1,61 @@
+{% extends "layouts/admin.twig" %}
+{% import "templates/form.twig" as form %}
+
+{% block content %}
+
+{% set action = 'add' %}
+
+{% if city %}
+    {% set action = 'edit&city_id=' ~ city.city_id %}
+{% endif %}
+
+<h2>
+{% if city %}
+Edytuj miasto
+{% else %}
+Dodaj nowe miasto
+{% endif %}
+<a href="/wp-admin/admin.php?page=kdm_city_list" class="add-new-h2">Wróć</a>
+</h2>
+
+
+{% if errors %}
+<div class="error">
+    {% for error in errors %}
+    {{ error.0 }}<br />
+    {% endfor %}
+</div>
+{% endif %}
+
+<form action="/wp-admin/admin.php?page=kdm_city_{{action}}" method="post">
+
+    <table class="form-table">
+        <tbody>
+            {% if city %}
+            <input type="hidden" name="city[city_id]" value="{{city.city_id}}" />
+            {% endif %}
+
+            {{ form.select('city[country_id]', 'Państwo', countries, 'country_id', 'name', city.country_id) }}
+
+            {{ form.input('text', 'city[name]', 'Nazwa na liście w panelu administracyjnym', city.name, '') }}
+
+            {{ form.input('text', 'city[latitude]', 'Szerokość geograficzna', city.latitude, '') }}
+            {{ form.input('text', 'city[longitude]', 'Długość geograficzna', city.longitude, '') }}
+
+            {% for language in languages %}
+                {{ form.input('text', 'city[text_languages]['~language.language_id~']', 'Nazwa (język '~language.name~')', attribute(text_languages, language.language_id), '') }}
+            {% endfor %}
+
+        </tbody>
+    </table>
+    <p class="submit">
+        {% if city %}
+        <button class="button button-primary">Edytuj</button>
+        {% else %}
+        <button class="button button-primary">Dodaj</button>
+        {% endif %}
+    </p>
+
+</form>
+
+{% endblock %}

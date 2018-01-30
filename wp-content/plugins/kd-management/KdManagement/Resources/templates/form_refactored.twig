@@ -1,0 +1,76 @@
+{% macro input(type, name, display_name, value, placeholder, classes, attrs) %}
+    <div class="form-group">
+        <div class="label">
+            {{ display_name }}
+        </div>
+        <div class="input">
+            <input
+                id="{{ name }}"
+                type="{{ type|default('text') }}"
+                {% if type == 'number' %}
+                step="any"
+                {% endif %}
+                {% if classes %}
+                class="{{ classes }}"
+                {% endif %}
+                {% if attrs %}
+                {{ attrs }}
+                {% endif %}
+                name="{{ name }}"
+                value="{{ value|e }}"
+                placeholder="{{ placeholder }}" />
+
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro checkbox(checked_value, name, display_name, value, placeholder, classes) %}
+
+{% import _self as forms %}
+
+{% if value == checked_value %}
+{% set attrs = 'checked="checked"' %}
+{% endif %}
+
+<input type="hidden" name="{{ name }}" value="0" />
+
+{{ forms.input('checkbox', name, display_name, checked_value, placeholder, classes, attrs) }}
+
+{% endmacro %}
+
+
+{% macro textarea(name, display_name, value) %}
+
+<div class="form-group">
+    {% if display_name|length > 0 %}
+    <div class="label">
+        {{ display_name }}
+    </div>
+    {% endif %}
+    <div class="input">
+        <textarea id="{{ name }}" name="{{ name }}" class="large-text" cols="30" rows="10">{{ value }}</textarea>
+    </div>
+</div>
+
+{% endmacro %}
+
+{% macro select(name, display_name, options, option_value_attr, option_label_attr, value) %}
+
+    <div class="form-group">
+        <div class="label">
+            {{ display_name }}
+        </div>
+        <div class="input">
+        <select name="{{ name }}">
+        {% for option in options %}
+            <option value="{{ attribute(option, option_value_attr) }}"
+                {{ attribute(option, option_value_attr) == value ? 'selected' : '' }}>
+                {{ attribute(option, option_label_attr) }}
+            </option>
+        {% endfor %}
+        </select>
+
+        </div>
+    </div>
+
+{% endmacro %}

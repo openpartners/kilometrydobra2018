@@ -1,0 +1,26 @@
+{% extends "layouts/admin.twig" %}
+
+{% block content %}
+
+<h2>Miasta<a href="/wp-admin/admin.php?page=kdm_city_add" class="add-new-h2">Dodaj nowe</a></h2>
+<table class="wp-list-table widefat">
+    <thead>
+        <tr>
+            <th>Nazwa</th>
+            <th>Akcje</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for city in cities %}
+        <tr{% if loop.index is odd %} class="alternate"{% endif %}>
+            <td>{{ city.name }}</td>
+            <td>
+                <a href="/wp-admin/admin.php?page=kdm_city_edit&city_id={{city.city_id}}">Edytuj</a>
+                <!-- <a href="/wp-admin/admin.php?page=kdm_city_remove&city_id={{city.city_id}}">Usuń</a> -->
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

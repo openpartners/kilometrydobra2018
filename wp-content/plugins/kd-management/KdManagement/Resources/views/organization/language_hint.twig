@@ -1,0 +1,39 @@
+<style>
+    #language-hint-container {
+        border-radius: 10px;
+        background: rgba(255, 0, 0, 0.6);
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+
+</style>
+
+<div id="language-hint-container">
+    <div class="description">
+        <p>Aby dodać wersję językową posta, należy umieścić ją w tagu analogicznym do poniższego:</p>
+        <p>[kod_języka]treść[/kod_języka]</p>
+
+        <p>
+        Można dodawać wiele wersji językowych w polu poniżej, np.:
+        </p>
+        <p>
+            [pl]Treść posta po polsku[/pl]
+        </p>
+        <p>
+            [en]Post content in english![/en]
+        </p>
+    </div>
+
+    <div class="available-languages">
+        <p>Dostępne języki:</p>
+
+        <ul>
+            {% for language in languages %}
+                <li>{{ language.name }} - tag: [{{ language.label }}]treść[/{{ language.label }}]</li>
+            {% endfor %}
+
+        </ul>
+
+    </div>
+</div>
