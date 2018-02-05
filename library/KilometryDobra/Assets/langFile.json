@@ -1,0 +1,200 @@
+{
+    "baseUrl" : {
+        "pl" : "/",
+        "en" : "/milesofgood/"
+    },
+    "joinUsButton" : {
+        "pl" : "Pobierz informator",
+        "en" : "Download directory"
+    },
+    "homepageCounterCaption" : {
+        "pl" : "#organizacji jest już w edycji 2017!",
+        "en" : "#organizations are with us in edition 2017!"
+    },
+    "homepageGlobeBoxCaption" : {
+        "pl" : "Zbierz pieniądze na #cel swojej organizacji!",
+        "en" : "You can collect money for #goal your organization!"
+    },
+    "homepageGlobeBoxButton" : {
+        "pl" : "Pobierz informator",
+        "en" : "Download directory"
+    },
+    "homepageOurResultsBoxCaption" : {
+        "pl" : "Nasze wyniki",
+        "en" : "OurResults."
+    },
+    "homepageCampaignersBoxCaption" : {
+        "pl" : "Poznaj #organizacje, które będą z nami w 208 roku",
+        "en" : "Meet awesome #organizations, which will be with us in 2018"
+    },
+    "homepageVideoBoxCaption" : {
+        "pl" : "Będzie się działo!",
+        "en" : "Look at this!"
+    },
+    "homepageHowToJoinBoxCaption" : {
+        "pl" : "Jak do nas dołączyć?",
+        "en" : "How to join us?"
+    },
+    "homepageHowToJoinBoxButton" : {
+        "pl" : "Pobierz informator",
+        "en" : "Download directory"
+    },
+    "homepageOurResultsBoxButton" : {
+        "pl" : "Pobierz informator",
+        "en" : "Download directory"
+    },
+    "afterEnrollmentBoxCaption" : {
+        "pl" : "Gratulujemy!",
+        "en" : "Congratulations!"
+    },
+    "afterEnrollmentBoxContent" : {
+        "pl" : "Formularz został przesłany, skontaktujemy się z Tobą wkr�tce.",
+        "en" : "Form has been sent correctly, we will contact you in 3 days."
+    },
+    "homepageOurResultsTile1Title" : {
+        "pl" : "Darczyńcy wsparli",
+        "en" : "Donors have supported"
+    },
+    "homepageOurResultsTile1Caption" : {
+        "pl" : "80 celów",
+        "en" : "80 goals"
+    },
+    "homepageOurResultsTile2Title" : {
+        "pl" : "Zebraliśmy już",
+        "en" : "Together we have collected"
+    },
+    "homepageOurResultsTile2Caption" : {
+        "pl" : "2,3 MLN PLN",
+        "en" : "2,3 MLN PLN"
+    },
+    "homepageOurResultsTile3Title" : {
+        "pl" : "Kilometry Dobra zna już",
+        "en" : "People that recognize<br>Miles of Good"
+    },
+    "homepageOurResultsTile3Caption" : {
+        "pl" : "6,1 mln osób",
+        "en" : "6,1 million"
+    },
+    "homepageHowToJoinBoxStep1Caption" : {
+        "pl" : "uzupełnij formularz",
+        "en" : "complete a form"
+    },
+    "homepageHowToJoinBoxStep2Caption" : {
+        "pl" : "skontaktuj się z konsultantem",
+        "en" : "contact with a consultant"
+    },
+    "homepageHowToJoinBoxStep3Caption" : {
+        "pl" : "podpisz umowę",
+        "en" : "sign agreement"
+    },
+    "homepageCampaignersBoxCountry" : {
+        "pl" : "Państwo",
+        "en" : "Country"
+    },
+    "homepageCampaignersBoxCity" : {
+        "pl" : "Miasto",
+        "en" : "City"
+    },
+    "homepageCampaignersBoxLogo" : {
+        "pl" : "Logo",
+        "en" : "Logo"
+    },
+    "homepageCampaignersBoxGoal" : {
+        "pl" : "Organizacja-Cel",
+        "en" : "Organization-Goal"
+    },
+    "enrollmentFormCaption" : {
+        "pl" : "Formularz kontaktowy",
+        "en" : "Contact form"
+    },
+    "enrollmentFormOrganizationNameLabel" : {
+        "pl" : "Nazwa organizacji",
+        "en" : "Name of the organization"
+    },
+    "enrollmentFormCountryCityLabel" : {
+        "pl" : "Państwo i miasto w którym działa organizacja",
+        "en" : "Coutry and city, where the organization operates"
+    },
+    "enrollmentFormFirstNameLastNameLabel" : {
+        "pl" : "Twoje imię i nazwisko",
+        "en" : "Your name and surname"
+    },
+    "enrollmentFormEmailLabel" : {
+        "pl" : "Twój e-mail",
+        "en" : "Your e-mail"
+    },
+    "enrollmentFormPhoneLabel" : {
+        "pl" : "Twój numer telefonu",
+        "en" : "Your mobile phone"
+    },
+    "enrollmentFormSendButtonLabel" : {
+        "pl" : "Wyślij",
+        "en" : "Send"
+    },
+    "enrollmentFormOrganizationNamePlaceholder" : {
+        "pl" : "Nazwa organizacji",
+        "en" : "Organization name"
+    },
+    "enrollmentFormCountryPlaceholder" : {
+        "pl" : "Państwo",
+        "en" : "Country"
+    },
+    "enrollmentFormCityPlaceholder" : {
+        "pl" : "Miasto",
+        "en" : "City"
+    },
+    "enrollmentFormFirstNamePlaceholder" : {
+        "pl" : "Imię",
+        "en" : "First name"
+    },
+    "enrollmentFormLastNamePlaceholder" : {
+        "pl" : "Nazwisko",
+        "en" : "Last name"
+    },
+    "enrollmentFormEmailPlaceholder" : {
+        "pl" : "Adres e-mail",
+        "en" : "E-mail address"
+    },
+    "enrollmentFormPhonePlaceholder" : {
+        "pl" : "Numer telefonu",
+        "en" : "Phone number"
+    },
+    "aboutUsTitle" : {
+        "pl" : "Kilometry Dobra",
+        "en" : "Miles of Good"
+    },
+    "aboutUsCaption" : {
+        "pl" : "Kilometry Dobra to kampania społeczna do której może dołączyć każdy, chcący działać w duchu idei filantropii, która nie ma granic.",
+        "en" : "Miles of good is a charity campaign that can be joined by anyone who wants to pursue the idea of philantropy, which has no borders."
+    },
+    "aboutUsItem1Caption" : {
+        "pl" : "<strong>Kilometry Dobra</strong> to stworzona w Polsce <strong>międzynarodowa kampania dobroczynna</strong>, jedyna, w której mogą wziąć udział organizacje z całego świata. Nie jest to jednorazowa akcja jak kiedyś Ice Bucket Challenge, lecz regularna, powtarzana co roku.<br><br>To kampania, która sprawia, że organizacje pozarządowe <strong>uzyskują pieniądze na realizację swoich celów</strong>. W ciągu ostatnich 3 lat do fundacji i stowarzyszeń trafiło już ponad <strong>2,3 mln zł. na realizację 80 celów</strong>.<br><br>Kilometry Dobra działają w oparciu o współpracę organizacji, samorządów i biznesu.<br><br>Naszym partnerem jest Fundacja Orange<br><br><img class=\"pull-auto width-300\" src=\"http://kilometrydobra.pl/wp-content/uploads/2017/02/fundacja-orange-logo-1.jpg\" /><br><br>Kampania uzyskała już także Patronat Honorowy 3 miast:<br><br><br><div class=\"row\"><div class=\"four columns text-center\">Poznania<br><br><img class=\"pull-auto width-300\" src=\"http://kilometrydobra.pl/wp-content/uploads/2017/02/Poznań-1.jpg\" /></div><div class=\"four columns text-center\">Lublina<br><br><img class=\"pull-auto width-300\" src=\"http://kilometrydobra.pl/wp-content/uploads/2017/02/Lublin-1.jpg\" /></div><div class=\"four columns text-center\">Krakowa<br><br><img class=\"pull-auto width-300\" src=\"http://kilometrydobra.pl/wp-content/uploads/2017/02/Kraków-1.jpg\" /></div></div><br><br>Dzięki temu budujemy koalicję, która ma większą siłę przebicia w dotarciu do darczyńców i mediów.<br><br>Zbieramy pieniądze na różne cele społeczne: edukację, bezpieczeństwo, ekologię, sport, kulturę, potrzeby humanitarne, kościół, niepełnosprawnych, zdrowie.<br><br><strong>Dodatkowo, Kilometry Dobra to wygodny sposób zbierania pieniędzy</strong>, gdyż:<ul><li>Każda organizacja zbiera na swój cel.</li><li>Pieniądze trafiają bezpośrednio do każdej organizacji, nigdy nie są na jednym koncie.</li></ul>Organizacje są wyposażane w materiały promocyjne (ulotki, skarbonki, bannery, roll upy, koszulki), dostają swoją stronę internetową, wsparcie techniczne i dedykowane szkolenie z fundraisingu. Nad kampanią czuwa też zespół, który promuje działania organizacji w mediach ogólnopolskich i kanałach społecznościowych.<br><br>Kilometry Dobra 2017 potrwają od 1 marca do 4 czerwca.",
+        "en" : "<strong>Miles of Good</strong> is a campaign that will help you gain donors and <strong>receive funding for achieving your goals</strong>.<br /><br /><strong>Miles of Good</strong> operates basing on the cooperation of organisations and <strong>active workers from around the world</strong>. We are building a coalition that has a stronger chance of reaching potential donors and the media. The campaign teaches values such as responsibility, partnership (organisations finance it with their own resources) and good management. It also promotes organisations that function in an effective an ethical way by aiding them financially.<br /><br />The involved organisations raise money for various social goals: education, security, ecology, sport, culture, humanitarian relief, churches, the disabled and health."
+    },
+    "aboutUsItem2Caption" : {
+        "pl" : "Przez 3 miesiące organizacje pozyskują pieniądze wszystkimi dostępnymi metodami: poprzez zbiórki w szkołach, parafiach, stronę internetową, aukcje, koncerty itp. <strong>Kampanii towarzyszy próba pobicia rekordu Guinnessa.</strong><br>Konkurencją jest układanie ciągu monet o jednym nominale - stąd Kilometry Dobra. Monety przykleja się na taśmę klejącą, tworząc metrowe odcinki (to ułatwienie wprowadzili kilka lat temu Filipińczycy). Do rekordu potrzebujemy 75 km., czyli ponad 3,3 mln zł.<br><br><strong>W ostatniej edycji:</strong><ul><li>Ukazało się 905 publikacji medialnych o organizacjach uczestniczących w akcji.</li><li>Ekwiwalent reklamowy wyniósł 2 295 752 zł.</li><li>Informacje o Kilometrach Dobra dotarły do 6 369 073 osób.</li></ul>Dotychczasowe <strong>efekty Kilometrów Dobra</strong> to m.in., stypendia naukowe dla dzieci z terenu małopolski, powstanie świetlicy rehabilitacyjnej dla niepełnosprawnych umysłowo z Zamościa, remont przedszkola Sióstr Benedyktynek w Jarosławiu czy też zakup samochodu specjalistycznego dla rodziny ze Złotoryi.",
+        "en" : "<strong>Additionally, Miles of Good is a comfortable way of raising money because:</strong><br /><br /><ul><li>every organisation works for their own goals</li><li>the funds go directly to each organisation, they are never in one account</li></ul><br /><br />This year's campaign will begin on the 1st of March and end on the 4th of June 2017. For 3 months, cooperation organisations will be raising money with all the available methods: through rallies at schools, parishes as well as through our website and other auctions and concerts. <strong>The campaign is accompanied by an attempt to beat the Guinness world record.</strong><br /><br />The competition consists of assembling rows of coins of the same denomination - that's why the campaign is named Miles of Good. The coins are being glued to rows of tape, creating one meter sections (this facilitation was invented a few years ago by the Filipinos). To beat the record we need almost 47 miles.<br /><br />The coing for creating the sections is chosen in agreement <strong>with the first organisation</strong> that enters the campaign for each country."},
+    "aboutUsItem3Caption" : {
+        "pl" : "Naszą akcję wspierają znani i lubiani ambasadorzy: <strong>Robert Lewandowski, Cezary Żak, zespół Perfect, IRA, Bracia Golec, Kamil Grosicki, Jakub Wawrzyniak, Łukasz Piszczek, Maciej Kot, prof. Walery Pisarek, Omenaa Mensah, Artur Barciś, Krzysztof Ibisz, Barbara Stępniak – Wilk, Jacek Krzynówek, Ewa Bem,  Piotr Wyszomirski, Joachim Mencel, Paulina Maj, Witold Paszt</strong>. <a href=\"https://www.youtube.com/watch?v=6qT9P4LDQ3k\" target=\"_blank\">Hymn kampanii</a> został w tym roku napisany i nagrany przez zespół <strong>Skaldowie</strong>.<br><br>Organizacja dużej i skutecznej kampanii fundraisingowej to koszt 300 - 500 tys. zł. Uczestnicząc w kampanii Kilometry Dobra organizacje ponoszą nawet <strong>kilkaset razy mniejsze koszty</strong>. Wkład własny zależy od wielkości miejscowości, w której dana organizacja będzie przeprowadzać finał.<br><br>Chcemy, by Kilometry Dobra stały się największą kampanią filantropijną w Polsce,a w <strong>2020 były zbierane na wszystkich kontynentach</strong>, w 1000 miast na całym świecie.",
+        "en" : "For each organisation that applies to enter the campaign, <strong>we offer</strong>:<br /><br /><ul><li>providing a website for the campaign with a subpage dedicated to your organisation,</li><li>providing a system of international online payments,</li><li>creating the design of promotional materials,</li><li>creating the design of graphics to use online,</li><li>translations of documents and promotional materials,</li><li>helpdesk in English,</li><li>promoting the campaign on social media,</li><li>a fundraising know-how from various countries around the world.</li></ul><br /><br />The campaign is financed from the recruitment fees payed separately by each organisation. The fee is decided taking into consideration the financial situation of the country, basing on PKB per Capita calculated by the International Monetary Fund."},
+    "aboutUsBottomCaption" : {
+        "pl" : "Kilometry Dobra to <span class=\"text-bold font-size-2em\">prawdziwe Mistrzostwa Świata w Dobroci</span>, weź w nich udział!",
+        "en" : "<a href=\"/zglos-sie\"><strong>Order a directory</strong></a> to find out more about the rules of the campaign."
+    },
+    "enrollmentAgreement" : {
+        "pl" : "Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji rekrutacji organizacji do kampanii Kilometry Dobra (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. z 2002r. Nr 101, poz. 926 ze zm.).",
+        "en" : "I hereby give consent for my personal data included in my application to be processed for the purposes of recruitment to the Miles of Good, in accordance with the Personal Data Protection Act dated 29.08.1997 (consolidated text: Journal of Laws of the Republic of Poland 2002 No 101, item 926 as amended)."
+    },
+    "ogTitle" : {
+        "pl" : "Kilometry Dobra",
+        "en" : "Kilometry Dobra"
+    },
+    "ogDescription" : {
+        "pl" : "Kilometry Dobra to kampania społeczna do której może dołączyć każdy, chcący działać w duchu idei filantropii, która nie ma granic.",
+        "en" : "Kilometry Dobra to kampania społeczna do której może dołączyć każdy, chcący działać w duchu idei filantropii, która nie ma granic."
+    },
+    "ogImage" : {
+        "pl" : "http://kilometrydobra.pl/wp-content/themes/kd/images/horizontal-logo.png",
+        "en" : "http://kilometrydobra.pl/wp-content/themes/kd/images/horizontal-logo.png"
+    }
+}
